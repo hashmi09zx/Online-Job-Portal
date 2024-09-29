@@ -1,0 +1,129 @@
+<web-app>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>CreateAccountServlet</servlet-name>
+        <servlet-class>CreateAccountServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateAccountServlet</servlet-name>
+        <url-pattern>/demo</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>CompanyRegistrationServlet</servlet-name>
+        <servlet-class>CompanyRegistrationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CompanyRegistrationServlet</servlet-name>
+        <url-pattern>/CompanyRegistrationServlet</url-pattern>
+    </servlet-mapping>
+
+        <!-- Define servlet mappings -->
+    <servlet>
+        <servlet-name>CompanyLoginServlet</servlet-name>
+        <servlet-class>CompanyLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CompanyLoginServlet</servlet-name>
+        <url-pattern>/CompanyLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define security constraints -->
+    <!-- <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Protected Pages</web-resource-name>
+            <url-pattern>/Option_Edit_Post_Jobs.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>authenticatedCompany</role-name>
+        </auth-constraint>
+    </security-constraint> -->
+
+    <!-- <security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Protected Pages</web-resource-name>
+        <url-pattern>/Option_Edit_Post_Jobs.jsp</url-pattern> -->
+        <!-- <url-pattern>/EditJob.jsp</url-pattern>
+        <url-pattern>/PostJob.jsp</url-pattern> -->
+    <!-- </web-resource-collection>
+    <auth-constraint>
+        <role-name>authenticatedCompany</role-name>
+    </auth-constraint>
+</security-constraint> -->
+
+
+    <!-- <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/CompanyLogin.jsp</form-login-page>
+            <form-error-page>/CompanyLogin.jsp</form-error-page>
+        </form-login-config>
+    </login-config> -->
+
+    <!-- Define security roles -->
+    <!-- <security-role>
+        <role-name>authenticatedCompany</role-name>
+    </security-role> -->
+
+
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>FileUploadServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/FileUploadServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FileListServlet</servlet-name>
+        <servlet-class>FileListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FileListServlet</servlet-name>
+        <url-pattern>/FileListServlet</url-pattern>
+    </servlet-mapping>
+
+    
+      <servlet>
+        <servlet-name>PdfServlet</servlet-name>
+        <servlet-class>PdfServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PdfServlet</servlet-name>
+        <url-pattern>/PdfServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+    <servlet-name>FileStatusUpdateServlet</servlet-name>
+    <servlet-class>FileStatusUpdateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>FileStatusUpdateServlet</servlet-name>
+    <url-pattern>/updateFileStatus</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>
